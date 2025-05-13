@@ -2,7 +2,7 @@
 ---
 Deep models have recently achieved remarkable performances in solving partial differential equtions (PDEs). The previous methods are mostly focused on PDEs arising in Euclidean spaces with less emphasis on the general manifolds with rich geometry. Several proposals attempt to account for the geometry by exploiting the spatial coordinates but overlook the underlying intrinsic geometry of manifolds. In this paper, we propose a Curvature-aware Graph Attention for PDEs on manifolds by exploring the important intrinsic geometric quantities such as curvature and discrete gradient operator. It is realized via parallel transport and tensor field on manifolds. To accelerate computation, we present three curvatureoriented graph embedding approaches and derive closed-form parallel transport equations, and a sub-tree partition method is also developed to promote parameter-sharing. Our proposed curvature-aware attention can be used as a replacement for vanilla attention, and experiments show that it significantly improves the performance of the existing methods for solving PDEs on manifolds.
 
-[Curvature-aware Graph Attention for PDEs on Manifold](https://openreview.net/forum?id=vWYLQ0VPJx&noteId=vWYLQ0VPJx)
+[Curvature-aware Graph Attention for PDEs on Manifold[paper]](https://openreview.net/forum?id=vWYLQ0VPJx&noteId=vWYLQ0VPJx)
 
 ### Requirements
 ---
@@ -10,7 +10,7 @@ The code doesn't need any extra dependency except for popular libraries like pyt
 
 ### Instructions
 ---
-The main body of our model lies in CURVGT.py while some auxilary classes reside in graphtransformers.py and ResNet.py. Geometry processed documents like normal vectors, Gaussian curvature and parameters to support parallel transport are all in the folder geometry_processed_docs. Stuffs to support sub-tree partition mechanism are in the folder sub_tree_partitions. The train set and test set are in the folder dataset_wave_wrinkle.
+The main body of our model lies in `CURVGT.py` while some auxilary classes reside in `graphtransformers.py` and `ResNet.py`. Geometry processed documents like normal vectors, Gaussian curvature and parameters to support parallel transport are all in the folder `geometry_processed_docs`. Stuffs to support sub-tree partition mechanism are in the folder `sub_tree_partitions`. The train set and test set are in the folder `wrinkle`. The weights of the best-performing model are saved in the `best_model` directory.
 
 ### Quick Start
 ---
